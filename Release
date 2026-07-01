@@ -1,0 +1,20 @@
+Origin: Shaniqua Choululupa
+Label: Shaniqua Choululupa
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Static architecture manifest mapping suite indices.
+MD5Sum:
+ 8c78686a59197825222e78a61bef016a 913 Packages
+ a9a8a1a1e2319cc44b3ff3d9146181fe 547 Packages.gz
+ a9a8a1a1e2319cc44b3ff3d9146181fe 547 Packages.bz2
+SHA1:
+ e4de1fc31109a26d6735ecf0246d14a7824f8fa9 913 Packages
+ 53e7487f289e8866b1211a956ee89ffbbd101006 547 Packages.gz
+ 53e7487f289e8866b1211a956ee89ffbbd101006 547 Packages.bz2
+SHA256:
+ bc36b389c98b122b28bdc8f865d2740c4ff01a6aa7a0c50f27d6c47276f54eab 913 Packages
+ 988bc633f975c53b54de494ae1acba7b052aafa9f278b05a72553b809378e52a 547 Packages.gz
+ 988bc633f975c53b54de494ae1acba7b052aafa9f278b05a72553b809378e52a 547 Packages.bz2

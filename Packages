@@ -1,0 +1,25 @@
+Package: com.history.of.ios
+Name: History Of iOS
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, firmware (>= 10.0.1)
+Filename: debs/com.willbraff.historyofios_1.9.1_iphoneos-arm64 (1).deb
+Size: 23145260
+MD5sum: 1137cf3a434785c1e93771b2221f2d67
+SHA1: a3c30abdd706fecca89c24994d271b3574debcda
+SHA256: b84cd0ed8934311d49ba95716b9b27fdd6728aa167a9090d93ffe4a15d3abf20
+Section: Themes
+Description: Quite a few iOS themes!!!
+
+Package: ai.akemi.shaniqua.choululupa
+Name: AppSync Unified
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, firmware (>= 5.0)
+Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm.akemi-git-235aca6cddfbdc9fa87fcb5b2aec2df37ed6d65a.deb
+Size: 51658
+MD5sum: 536009a11dad57e48a5563224eaffaff
+SHA1: e0fa412cb3c26718887edd834804c88909297079
+SHA256: 0036f28fcbdb165d4f58968a237ca9fe7b6ed33fea25b9a5eb1fc141f6bf5a09
+Section: Tweaks
+Description: test stuff

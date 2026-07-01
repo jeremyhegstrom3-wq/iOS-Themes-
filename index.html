@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shaniqua Choululupa</title>
+    <link rel="icon" type="image/png" href="icons/GLOBEICON.png">
+    <link rel="apple-touch-icon" href="icons/GLOBEICON.png">
+    <style>
+        body { font-family: -apple-system-body, "Helvetica Neue", Helvetica, Arial, sans-serif; background-color: #cbd2d8; background-image: linear-gradient(90deg, #c5cdd3 50%, transparent 50%); background-size: 4px 100%; margin: 0; padding: 0; display: flex; justify-content: center; -webkit-font-smoothing: antialiased; }
+        .container { width: 100%; max-width: 960px; padding: 15px; box-sizing: border-box; }
+        .header-section { display: flex; justify-content: center; margin-bottom: 20px; }
+        .header-card { background: #ffffff; border: 1px solid #ababab; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); padding: 20px 35px; display: flex; align-items: center; gap: 25px; width: 100%; max-width: 600px; box-sizing: border-box; }
+        .repo-icon-wrapper { width: 80px; height: 80px; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: block; flex-shrink: 0; background: #fff; }
+        .repo-icon { width: 100%; height: 100%; object-fit: cover; transform: scale(1.02); }
+        .repo-title { font-family: -apple-system-headline, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 38px; font-weight: 800; color: #000000; letter-spacing: -1.5px; line-height: 1.1; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+        .repo-title span { display: inline; }
+        .section-title { font-family: -apple-system-short-headline, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; color: #4d566f; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); margin: 0 0 8px 8px; }
+        .depiction-header { background: linear-gradient(to bottom, #f2f3f5 0%, #dcdee4 50%, #cfd2db 51%, #e1e4eb 100%); border: 1px solid #ababab; border-bottom: 1px solid #a1a1a1; color: #4c566c; font-size: 15px; font-weight: bold; padding: 7px 15px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75); border-top-left-radius: 8px; border-top-right-radius: 8px; margin-top: 15px; }
+        .table-group { background: #ffffff; border: 1px solid #ababab; border-radius: 10px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); margin-bottom: 20px; padding: 0; overflow: hidden; width: 100%; box-sizing: border-box; }
+        .table-group.depiction-group { border-top-left-radius: 0; border-top-right-radius: 0; border-top: none; margin-bottom: 15px; }
+        .table-row { display: block; position: relative; padding: 14px 15px; font-size: 17px; font-weight: bold; color: #222222; text-decoration: none; border-bottom: 1px solid #e0e0e0; background: #ffffff; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        .table-row:last-child { border-bottom: none; }
+        .row-link { color: #385487; font-weight: bold; cursor: pointer; }
+        .row-link:active { background: #e5e5e5; color: #385487; }
+        .row-static { color: #000000; font-weight: normal; }
+        .row-desc { font-family: -apple-system-body, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; color: #222222; line-height: 1.4; display: block; }
+        .pkg-row-layout { display: flex; align-items: center; gap: 12px; padding-right: 15px; }
+        .pkg-row-icon { width: 32px; height: 32px; border-radius: 7px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); flex-shrink: 0; }
+        .depiction-text-block { padding: 15px; font-size: 15px; color: #222222; line-height: 1.5; background: #ffffff; }
+        .depiction-list { margin: 0; padding-left: 20px; }
+        .depiction-list li { margin-bottom: 10px; font-size: 15px; color: #222222; }
+        .pkg-subtitle { font-size: 13px; color: #666666; font-weight: normal; display: block; margin-top: 2px; line-height: 1.2; }
+        
+        .seemycydia-credit { text-align: center; font-size: 12px; font-weight: bold; color: #566c89; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); margin-top: 30px; margin-bottom: 15px; }
+        .seemycydia-credit a { color: #385487; text-decoration: none; }
+        .back-nav-container { margin-bottom: 20px; padding-left: 5px; display: flex; align-items: center; }
+        .ios6-back-button { position: relative; display: inline-flex; align-items: center; height: 28px; padding: 0 12px 0 14px; margin-left: 14px; background: linear-gradient(to bottom, #6d829e 0%, #566c89 48%, #495e7c 52%, #425574 100%); border: 1px solid #2d3b52; border-left: none; border-top-right-radius: 5px; border-bottom-right-radius: 5px; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0,0,0,0.2); color: #ffffff; font-size: 12px; font-weight: bold; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); text-decoration: none; cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
+        .ios6-back-button::before { content: ""; position: absolute; top: 3px; left: -10px; width: 20px; height: 20px; background: linear-gradient(135deg, #6d829e 0%, #566c89 48%, #495e7c 52%, #425574 100%); border-left: 1px solid #2d3b52; border-bottom: 1px solid #2d3b52; transform: rotate(45deg); border-bottom-left-radius: 4px; box-shadow: inset 1px -1px 0 rgba(255, 255, 255, 0.2); z-index: 1; }
+        .ios6-back-button span { position: relative; z-index: 2; }
+        .main-row-link::after { content: ""; position: absolute; right: 18px; top: 50%; width: 7px; height: 7px; border-top: 3px solid #7f7f7f; border-right: 3px solid #7f7f7f; transform: translateY(-50%) rotate(45deg); }
+        .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+        .column { display: flex; flex-direction: column; gap: 0; }
+        .page-view { display: none; }
+        .page-view.active-view { display: block; }
+        .dashboard-block { display: block; width: 100%; }
+
+        @media (max-width: 768px) {
+            .dashboard-grid { display: flex; flex-direction: column; gap: 0; width: 100%; }
+            .column { display: contents; }
+            .container { padding: 10px; }
+            .header-card { max-width: 100%; gap: 15px; padding: 12px 15px; }
+            .repo-title { font-size: 26px; letter-spacing: -1px; line-height: 1.15; }
+            .repo-title span { display: block; }
+            .repo-icon-wrapper { width: 64px; height: 64px; border-radius: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="repo-main-page" class="page-view active-view">
+            <div class="header-section">
+                <div class="header-card">
+                    <div class="repo-icon-wrapper">
+                        <img src="icons/LOGO.png" class="repo-icon" onerror="this.onerror=null; this.src='CydiaIcon.png';" alt="Icon">
+                    </div>
+                    <div class="repo-title">Shaniqua Choululupa</div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="column">
+                    <div class="dashboard-block block-package-managers">
+                        <div class="section-title">Add to Package Manager</div>
+                        <div class="table-group">
+                            <div class="table-row row-static" style="font-weight: bold;">Shaniqua Choululupa</div>
+                            <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://github.com/jeremyhegstrom3-wq/iOS-Themes-" class="table-row row-link main-row-link">Add to Cydia</a>
+                            <a href="sileo://source/https://github.com/jeremyhegstrom3-wq/iOS-Themes-" class="table-row row-link main-row-link">Add to Sileo</a>
+                            <a href="zbra://sources/add/https://github.com/jeremyhegstrom3-wq/iOS-Themes-" class="table-row row-link main-row-link">Add to Zebra</a>
+                            <a href="installer://add/https://github.com/jeremyhegstrom3-wq/iOS-Themes-" class="table-row row-link main-row-link">Add to Installer</a>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-block block-social">
+                        <div class="section-title">Support RetroWeirdos Projects</div>
+                        <div class="table-group">
+                            <a href="https://x.com/RetroWeirdos" target="_blank" class="table-row row-link main-row-link">X</a>
+                            <a href="https://www.reddit.com/user/Total_Negotiation608/" target="_blank" class="table-row row-link main-row-link">Reddit</a>
+                            <a href="https://www.youtube.com/@RetroWeirdos" target="_blank" class="table-row row-link main-row-link">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="dashboard-block block-about-me">
+                        <div class="section-title">About Me</div>
+                        <div class="table-group">
+                            <div class="table-row row-static" style="padding: 15px 18px;">
+                                <span class="row-desc">i really like this</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-block block-featured">
+                        <div class="section-title">Featured Packages</div>
+                        <div class="table-group">
+                    <a onclick="switchPage('com-history-of-ios-page')" class="table-row row-link main-row-link">
+                        <div class="pkg-row-layout">
+                            <img src="icons/History Of iOS.png" onerror="this.src='icons/GLOBEICON.png'" class="pkg-row-icon" alt="Icon">
+                            <div>
+                                History Of iOS
+                                <span class="pkg-subtitle">Quite a few iOS themes!!!</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a onclick="switchPage('ai-akemi-shaniqua-choululupa-page')" class="table-row row-link main-row-link">
+                        <div class="pkg-row-layout">
+                            <img src="icons/AppSync Unified.png" onerror="this.src='icons/GLOBEICON.png'" class="pkg-row-icon" alt="Icon">
+                            <div>
+                                AppSync Unified
+                                <span class="pkg-subtitle">test stuff</span>
+                            </div>
+                        </div>
+                    </a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seemycydia-credit">
+                Made with SeeMyCydia by <a href="https://www.youtube.com/@RetroWeirdos" target="_blank">RetroWeirdos on youtube</a>
+            </div>
+        </div>
+        
+                <div id="com-history-of-ios-page" class="page-view">
+                    <div class="back-nav-container">
+                        <div onclick="switchPage('repo-main-page')" class="ios6-back-button"><span>Back</span></div>
+                    </div>
+                    <div class="header-section">
+                        <div class="header-card" style="max-width: 100%; background: transparent; border: none; box-shadow: none; padding: 10px 0; flex-direction: column; gap: 12px; text-align: center;">
+                            <div class="repo-icon-wrapper" style="border-radius: 18px; margin: 0 auto;">
+                                <img src="icons/History Of iOS.png" onerror="this.src='icons/GLOBEICON.png'" class="repo-icon" alt="Icon">
+                            </div>
+                            <div>
+                                <div style="font-family: -apple-system-headline, sans-serif; font-size: 32px; font-weight: bold; color: #000; text-shadow: 0 1px 0 #fff;">History Of iOS</div>
+                                <p style="font-size: 15px; margin: 6px 0 0 0; color: #333; line-height: 1.4;">Quite a few iOS themes!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depiction-header">Features</div>
+                    <div class="table-group depiction-group">
+                        <div class="depiction-text-block">
+                            <ul class="depiction-list"><li>egg</li></ul>
+                        </div>
+                    </div>
+                    <div class="depiction-header">Requirements</div>
+                    <div class="table-group depiction-group">
+                        <div class="depiction-text-block">
+                            <ul class="depiction-list"><li>mobilesubstrate, firmware (>= 10.0.1)</li></ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="ai-akemi-shaniqua-choululupa-page" class="page-view">
+                    <div class="back-nav-container">
+                        <div onclick="switchPage('repo-main-page')" class="ios6-back-button"><span>Back</span></div>
+                    </div>
+                    <div class="header-section">
+                        <div class="header-card" style="max-width: 100%; background: transparent; border: none; box-shadow: none; padding: 10px 0; flex-direction: column; gap: 12px; text-align: center;">
+                            <div class="repo-icon-wrapper" style="border-radius: 18px; margin: 0 auto;">
+                                <img src="icons/AppSync Unified.png" onerror="this.src='icons/GLOBEICON.png'" class="repo-icon" alt="Icon">
+                            </div>
+                            <div>
+                                <div style="font-family: -apple-system-headline, sans-serif; font-size: 32px; font-weight: bold; color: #000; text-shadow: 0 1px 0 #fff;">AppSync Unified</div>
+                                <p style="font-size: 15px; margin: 6px 0 0 0; color: #333; line-height: 1.4;">test stuff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depiction-header">Features</div>
+                    <div class="table-group depiction-group">
+                        <div class="depiction-text-block">
+                            <ul class="depiction-list"><li>testicle</li></ul>
+                        </div>
+                    </div>
+                    <div class="depiction-header">Requirements</div>
+                    <div class="table-group depiction-group">
+                        <div class="depiction-text-block">
+                            <ul class="depiction-list"><li>mobilesubstrate, firmware (>= 5.0)</li></ul>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <script>
+        function switchPage(pageId) {
+            var views = document.querySelectorAll('.page-view');
+            views.forEach(function(v) { v.classList.remove('active-view'); });
+            var target = document.getElementById(pageId);
+            if(target) { target.classList.add('active-view'); window.scrollTo(0, 0); }
+        }
+    </script>
+</body>
+</html>
